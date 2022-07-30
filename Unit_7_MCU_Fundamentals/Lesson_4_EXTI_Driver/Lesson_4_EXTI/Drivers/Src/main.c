@@ -128,8 +128,9 @@ void my_wait(int x)
 void EXTI9_Callback(void)
 {
 	IRQ_Flag = 1;
+	HAL_LCD_CLEAR_SCREEN();
 	HAL_LCD_WRITE_STRING("IRQ EXTI9 has happened _|-");
-	my_wait(1000);
+
 }
 
 int main(void)
@@ -142,9 +143,7 @@ int main(void)
 	HAL_LCD_INIT();
 	HAL_LCD_CLEAR_SCREEN();
 
-	HAL_LCD_WRITE_STRING("Khloud Mohamed");
-	my_wait(30);
-	HAL_LCD_CLEAR_SCREEN();
+
 
 	EXTI_PinConfig_t EXTI_CFG;
 	EXTI_CFG.EXTI_PIN = EXTI9PB9;
@@ -161,10 +160,11 @@ int main(void)
     	if(IRQ_Flag)
     	{
     		HAL_LCD_CLEAR_SCREEN();
+    		HAL_LCD_WRITE_STRING("Khloud Mohamed");
     		IRQ_Flag = 0;
 
     	}
-    	my_wait(1000);
+    	my_wait(500);
     }
 	return 0;
 }
