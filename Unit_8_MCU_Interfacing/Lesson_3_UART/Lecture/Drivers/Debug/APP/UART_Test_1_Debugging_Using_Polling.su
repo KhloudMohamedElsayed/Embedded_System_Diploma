@@ -1,0 +1,2 @@
+UART_Test_1_Debugging_Using_Polling.c:21:13:clock_init	4	static
+UART_Test_1_Debugging_Using_Polling.c:33:6:UART_Test_1_Debugging_Using_Polling	32	static

@@ -1,0 +1,4 @@
+GPIO_Toggel_LEDs_Using_Push_Button.c:12:6:clock_init	4	static
+GPIO_Toggel_LEDs_Using_Push_Button.c:22:6:GPIO_Init	16	static
+GPIO_Toggel_LEDs_Using_Push_Button.c:50:6:my_wait	24	static
+GPIO_Toggel_LEDs_Using_Push_Button.c:59:6:GPIO_Toggel_LEDs_Using_Push_Button	8	static
